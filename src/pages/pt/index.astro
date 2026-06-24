@@ -1,0 +1,55 @@
+---
+import config_json from "../../review_templates/template_en.json";
+import PageLayout from "../../layouts/PageLayout.astro";
+import OptionForm from "../../components/OptionForm.astro";
+import FlagSelect from "../../components/FlagSelect.astro";
+---
+
+<PageLayout title="Modelo para Análises Steam">
+  <header class="bg-slate-700 text-white py-2 flex flex-col items-center">
+    <h1>{"---{ Modelo pra Análise }---"}</h1>
+    <FlagSelect />
+    <p class="mt-0">☑ Massa demais</p>
+  </header>
+
+  <div class="max-w-screen-sm mx-auto px-4">
+    <p>
+      Essa ferramenta simplifica a criação de análises da steam de copiar e colar (se
+      tu tá nesse site, <em>isso</em> é o que você procura). Eu as acho engraçadas
+      , então eu fiz esse site pra evitar copiar e colar tanto.&nbsp;😆
+    </p>
+    <p>
+      O código é aberto &rarr; <a
+        href="https://github.com/bhar2254/steam-review-template"
+      >
+        Confira no Github</a
+      >!
+    </p>
+    <p>
+      O resultado gera uma linha na parte inferior que me dá crédito.
+      Deixar ali é opcional, mas muito apreciado! Obrigado!
+    </p>
+    {
+      config_json.categories.map((category, index) => (
+        <OptionForm category={category} index={index} />
+      ))
+    }
+    <div class="flex justify-center">
+      <button
+        id="output-button"
+        class="py-4 px-8 text-lg font-bold rounded-lg border-none shadow bg-amber-400 hover:cursor-pointer hover:shadow-lg transition-all"
+      >
+        Gerar Análise Steam!</button
+      >
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <button
+        id="copy-output"
+        class="py-2 px-4 text-lg rounded-lg border-none shadow bg-sky-100 hover:cursor-pointer hover:shadow-lg transition-all"
+      >
+        Copiar resultado</button
+      >
+    </div>
+  </div>
+</PageLayout>

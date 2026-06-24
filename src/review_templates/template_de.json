@@ -1,0 +1,164 @@
+{
+    "name": "Template",
+    "author": "Urheber",
+    "categories": [
+        {
+            "title": "Grafik",
+            "type": "radio",
+            "options": [
+                "Du vergisst die Realität",
+                "Umwerfend",
+                "Gut",
+                "Ganz ok",
+                "Schlecht",
+                "Längeres Betrachten kann unerwünschte Nebeneffekte haben",
+                "MS-DOS"
+            ]
+        },
+        {
+            "title": "Gameplay",
+            "type": "radio",
+            "options": [
+                "Sehr gut",
+                "Gut",
+                "Normales Gampelay halt",
+                "Mehh",
+                "Farbe beim trocken zuzuschauen ist spannender",
+                "Lass es einfach"
+            ]
+        },
+        {
+            "title": "Audio",
+            "type": "radio",
+            "options": [
+                "Ohrgasmus",
+                "Sehr gut",
+                "Gut",
+                "So lala",
+                "Schlecht",
+                "Mein HNO hat mir Höhrgeräte verschrieben"
+            ]
+        },
+        {
+            "title": "Zielgruppe",
+            "type": "check",
+            "options": [
+                "Kinder",
+                "Jugendliche",
+                "Erwachsene",
+                "Omi & Opa"
+            ]
+        },
+        {
+            "title": "Systemanforderungen",
+            "type": "radio",
+            "options": [
+                "Funktioniert MS Paint?",
+                "Kartoffel",
+                "Durchschnittlicher PC",
+                "High-End",
+                "Hast du reiche Eltern?",
+                "Frag NASA, ob sie einen Supercomputer für dich herumliegen haben"
+            ]
+        },
+        {
+            "title": "Spiel Größe",
+            "type": "radio",
+            "options": [
+              "Floppy Disk",
+              "Alte Größe",
+              "Okay",
+              "Groß",
+              "Wird 15% deiner 1 TB Festplatte brauchen",
+              "Du brauchst eine dedizierte Festplatte für das Spiel",
+              "Du wirst wohl oder übel in ein scharzes Loch investieren müssen um das Spiel zu speichern"
+            ]
+          },          
+        {
+            "title": "Schwerigkeit",
+            "type": "radio",
+            "options": [
+                "Einfach nur 'W' drücken",
+                "Leicht",
+                "Leicht zu Lernen, schwer zu meistern",
+                "Benötigt einiges an Hirnschmalz",
+                "Schwer",
+                "Dark Souls 2.0"
+            ]
+        },
+        {
+            "title": "Grind",
+            "type": "radio",
+            "options": [
+                "Nicht vorhanden",
+                "Nur wenn dich Ranglisten interessieren",
+                "Nicht notwendig",
+                "Standard Grind",
+                "Viel zu viel",
+                "Kündige deinen Job"
+            ]
+        },
+        {
+            "title": "Story",
+            "type": "radio",
+            "options": [
+                "Keine Story",
+                "Bissi",
+                "Joa",
+                "Gut",
+                "Recht gut",
+                "Das Spiel wird dein Leben ersetzen"
+            ]
+        },
+        {
+            "title": "Spielzeit",
+            "type": "radio",
+            "options": [
+                "Lang genug für eine Tasse Tee",
+                "Kurz",
+                "Normal",
+                "Lang",
+                "Bis zum Hitzetod des Universums und noch viel länger"
+            ]
+        },
+        {
+            "title": "Preis",
+            "type": "radio",
+            "options": [
+                "Praktisch geschenkt",
+                "Es lohnt sich",
+                "Nur mit Rabatt",
+                "Wenn du ein bisschen Geld übrig hast",
+                "Nicht empfohlen",
+                "Benutz das Geld lieber zum einheizen"
+            ]
+        },
+        {
+            "title": "Bugs",
+            "type": "radio",
+            "options": [
+                "Keine mitbekommen",
+                "Ein paar",
+                "Kann nervig werden",
+                "ARK: Survival Evolved",
+                "Das ganze Spiel ist ein einziges Bugfest"
+            ]
+        },
+        {
+            "title": "? / 10",
+            "type": "radio",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ]
+        }
+    ]
+}

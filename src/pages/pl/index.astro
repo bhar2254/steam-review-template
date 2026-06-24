@@ -1,0 +1,56 @@
+---
+import config_json from "../../review_templates/template_pl.json";
+import PageLayout from "../../layouts/PageLayout.astro";
+import OptionForm from "../../components/OptionForm.astro";
+import FlagSelect from "../../components/FlagSelect.astro";
+---
+
+<PageLayout title="Wzór recenzji steam">
+  <header class="bg-slate-700 text-white py-2 flex flex-col items-center">
+    <h1>{"---{ Wzór recenzji }---"}</h1>
+    <FlagSelect />
+    <p class="mt-0">☑ Super</p>
+  </header>
+
+  <div class="max-w-screen-sm mx-auto px-4">
+    <p>
+      To małe narzędzie upraszcza tworzenie zabawnych recenzji do produktów na Steam
+      (jeśli jesteś na tej stronie, to <em>jest</em> właśnie to, czego szukasz).
+      Uważam je za umiarkowanie zabawne, więc stworzyłem tę stronę,
+      aby nie musieć tyle edytować recenzji tworzonych prez innych ludzi..&nbsp;😆
+    </p>
+    <p>
+      Ten kod jest otwartoźródłowy &rarr; <a
+        href="https://github.com/bhar2254/steam-review-template"
+      >
+        sprawdź go na Githube</a
+      >!
+    </p>
+    <p>
+      Wyniki są generowane z napisem który mnie kredytuje.
+      Pozostawienie jej jest opcjonalne ale mile widziane! Z góry dzięki!
+    </p>
+    {
+      config_json.categories.map((category, index) => (
+        <OptionForm category={category} index={index} />
+      ))
+    }
+    <div class="flex justify-center">
+      <button
+        id="output-button"
+        class="py-4 px-8 text-lg font-bold rounded-lg border-none shadow bg-amber-400 hover:cursor-pointer hover:shadow-lg transition-all"
+      >
+        Wygeneruj wyjebiście śmieszną recenzję!</button
+      >
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <button
+        id="copy-output"
+        class="py-2 px-4 text-lg rounded-lg border-none shadow bg-sky-100 hover:cursor-pointer hover:shadow-lg transition-all"
+      >
+        Kopiuj swoją wyjebiście śmieszną recenzję!</button
+      >
+    </div>
+  </div>
+</PageLayout>

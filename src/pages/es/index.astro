@@ -1,0 +1,56 @@
+---
+import config_json from "../../review_templates/template_es.json";
+import PageLayout from "../../layouts/PageLayout.astro";
+import OptionForm from "../../components/OptionForm.astro";
+import FlagSelect from "../../components/FlagSelect.astro";
+---
+
+<PageLayout title="Plantilla de reseñas de steam">
+  <header class="bg-slate-700 text-white py-2 flex flex-col items-center">
+    <h1>{"---{ Plantilla para reseñas }---"}</h1>
+    <FlagSelect />
+    <p class="mt-0">☑ Asombroso</p>
+  </header>
+
+  <div class="max-w-screen-sm mx-auto px-4">
+    <p>
+      Esta pequeña herramienta simplifica la creación de reseñas de Steam de
+      copiar y pegar (si estás en este sitio web, esto es lo que estás
+      buscando). Las encuentro moderadamente graciosas, así que hice este sitio
+      web para evitar copiar y pegar tanto.&nbsp;😆
+    </p>
+    <p>
+      Es de código abierto! &rarr; <a
+        href="https://github.com/bhar2254/steam-review-template"
+      >
+        revisalo en Github</a
+      >!
+    </p>
+    <p>
+      El resultado genera una línea en la parte inferior que me da crédito.
+      Dejarla ahí es opcional, ¡pero altamente apreciado! ¡Gracias!
+    </p>
+    {
+      config_json.categories.map((category, index) => (
+        <OptionForm category={category} index={index}/>
+      ))
+    }
+    <div class="flex justify-center">
+      <button
+        id="output-button"
+        class="py-4 px-8 text-lg font-bold rounded-lg border-none shadow bg-amber-400 hover:cursor-pointer hover:shadow-lg transition-all"
+      >
+        Generar reseña de Steam!</button
+      >
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <button
+        id="copy-output"
+        class="py-2 px-4 text-lg rounded-lg border-none shadow bg-sky-100 hover:cursor-pointer hover:shadow-lg transition-all"
+      >
+        Copiar el resultado</button
+      >
+    </div>
+  </div>
+</PageLayout>
